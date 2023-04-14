@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0e29a92e8b.js" crossorigin="anonymous"></script>    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="flex justify-center my-6">
+            <form name="calculadora" class="bg-black flex flex-col gap-2 justify-evenly w-11/12 md:w-7/12 lg:w-5/12 xl:w-[24rem] h-[30rem] z-50 border-solid border-4 border-stone-400 rounded">
+                <div>
+                    <div class="flex justify-center mt-2">    
+                        <button id="btn-on" type="button" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">ON</button>
+                        <button id="btn-off" type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">OFF</button>
+                    </div>
+                    <div>
+                        <h1 class="text-xl text-center text-white font-bold mt-2">CASIO PERA</h1>
+                    </div>
+                </div>
+                <div class="flex justify-center  rounded-lg">
+                    <input id="resultado-operacion" class="text-right text-black text-xl py-2 px-1 w-[20rem] bg-stone-200 font-bold rounded" type="textfield" name="ans" value="" autocomplete="off" readonly>
+                </div>
+                <div>
+                    <div class="flex justify-evenly my-2">
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="7" onclick="document.calculadora.ans.value+='7'">7</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="8" onclick="document.calculadora.ans.value+='8'">8</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="9" onclick="document.calculadora.ans.value+='9'">9</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="+" onclick="document.calculadora.ans.value+='+'">+</button>
+                    </div>
+                    <div class="flex justify-evenly my-2">
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="4" onclick="document.calculadora.ans.value+='4'">4</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="5" onclick="document.calculadora.ans.value+='5'">5</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="6" onclick="document.calculadora.ans.value+='6'">6</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="-" onclick="document.calculadora.ans.value+='-'">-</button>
+                    </div>
+                    <div class="flex justify-evenly my-2">
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="1" onclick="document.calculadora.ans.value+='1'">1</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="2" onclick="document.calculadora.ans.value+='2'">2</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="3" onclick="document.calculadora.ans.value+='3'">3</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="x" onclick="document.calculadora.ans.value+='*'">x</button>
+                    </div>
+                    <div class="flex justify-evenly my-2">
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="0" onclick="document.calculadora.ans.value+='0'">0</button>
+                        <button type="reset" class="text-white text-xl bg-gradient-to-r from-red-400 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="C">C</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">=</button>
+                        <button type="button" class="text-white text-xl bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-6 py-4 text-center mr-2 mb-2 w-[4rem]" value="/" onclick="document.calculadora.ans.value+='/'">/</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="flex justify-center items-center gap-5 bg-emerald-700 h-12">
+        <h4>FOLLOW ME!</h4>
+        <a href="https://www.linkedin.com/in/leojara-it/" target="_blank" class="fa-brands fa-linkedin hover:text-blue-300"></a>
+        <a href="https://www.instagram.com/leo.fjara/" target="_blank" class="fa-brands fa-instagram hover:text-pink-400"></a>
+    </footer>
+
+    
+    <script src="./assets/index.js"></script>
+</body>
+</html>
